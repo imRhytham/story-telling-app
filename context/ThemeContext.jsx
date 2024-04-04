@@ -64,11 +64,11 @@ const ThemeContextProvider = ({ children }) => {
 
 	const toggleTheme = (themeName) => {
 		setCurrentTheme(themeName);
-		setFont(theme[themeName].bodyFont);
-		setHeadingFont(theme[themeName].headingFont);
-		setFontColor(theme[themeName].fontColor);
-		setBackgroundImage(theme[themeName].backgroundImage);
-		setBgColor(theme[themeName].backgroundColor);
+		setFont(theme[themeName]?.bodyFont);
+		setHeadingFont(theme[themeName]?.headingFont);
+		setFontColor(theme[themeName]?.fontColor);
+		setBackgroundImage(theme[themeName]?.backgroundImage);
+		setBgColor(theme[themeName]?.backgroundColor);
 	};
 
 	return (

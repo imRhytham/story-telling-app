@@ -93,7 +93,7 @@ export default function Home() {
 					<button
 						type="submit"
 						disabled={
-							!formData.fantasy || !formData.name || !formData.magicalElement
+							!formData.genre || !formData.name || !formData.magicalElement
 						}
 						className="w-full bg-forestGreen disabled:bg-opacity-50 text-white py-2 px-4 rounded-md hover:bg-indigo-600 focus:outline-none focus:bg-indigo-600"
 					>
