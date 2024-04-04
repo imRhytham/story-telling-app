@@ -4,7 +4,7 @@ import axios from "axios";
 import Image from "next/image";
 import { ThemeContext } from "@/context/ThemeContext";
 import { getStoryAndTitle } from "@/utils/helper";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { FaWhatsapp, FaReddit } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
@@ -21,7 +21,7 @@ const Page = () => {
 		bgColor,
 		headingFont,
 	} = useContext(ThemeContext);
-	const searchParams = useSearchParams();
+	const searchParams = new URLSearchParams(document.location.search);
 	const router = useRouter();
 	const name = decodeURIComponent(searchParams.get("name"));
 	const genre = decodeURIComponent(searchParams.get("genre"));
